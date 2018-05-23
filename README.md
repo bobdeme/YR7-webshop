@@ -1,4 +1,4 @@
-# Telepítése megye?
+# Telepítése
 
 1. Telepítsd a nodeJS LTS verziót: https://nodejs.org/en/
 2. add ki a mappádban az npm init parancsot, enterezd végig
