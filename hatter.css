@@ -1,5 +1,5 @@
 .hatter {
-    background-image: url("hatter2.jpg");
+    background-image: url("retro_hatter.png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,8 +8,8 @@
 }
 
 #nev {
-    font-family: 'Skranji', cursive;
-    color: ivory;
+    font-family: 'Kavivanar', cursive;
+    color: rgb(238, 89, 20);
     text-align: center;
     font-size: 60px;
 }
@@ -32,7 +32,7 @@
 
 button,
 #rendezesid {
-    font-family: 'Limelight', cursive;
+    font-family: 'Kavivanar', cursive;
     background-color: rgb(120, 20, 20);
     color: ivory;
     font-size: 18px;
