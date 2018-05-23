@@ -182,12 +182,8 @@ function vasarloadat() {
     sql(sqlText);
 }
 
-function vasarlorendeles() {
+function osszar() {
     x.style.display = "none";
-    var email = document.getElementById("emailId").value;
-    var jelszo = document.getElementById("passwordId").value;
-    email = email.replace(/\'|\"|\`|\;/g, "");
-    jelszo = jelszo.replace(/\'|\"|\`|\;/g, "");
-    var sqlText = "SELECT termek.nev as Film, db as Mennyiség, ar as 'Ár/db', fizetesmod.nev as Fizetés, DATE_FORMAT(rendelesdatum, '%Y.%m.%d.') as Dátum FROM rendeles JOIN vasarlo ON rendeles.vasarloId = vasarlo.id JOIN rendelestetel ON rendeles.id = rendelestetel.rendelesId JOIN termek ON rendelestetel.termekId = termek.id JOIN fizetesmod ON rendeles.fizetesmod = fizetesmod.id WHERE email = '" + email + "' AND jelszo = '" + jelszo + "' ORDER BY rendelesdatum";
+    var sqlText = "SELECT sum(ar * keszlet) as 'Teljes árukészlet értéke' FROM termek"
     sql(sqlText);
 }
