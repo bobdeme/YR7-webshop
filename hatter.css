@@ -1,0 +1,89 @@
+.hatter {
+    background-image: url("hatter2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#nev {
+    font-family: 'Skranji', cursive;
+    color: ivory;
+    text-align: center;
+    font-size: 60px;
+}
+
+.oldalnev {
+    background-color: rgba(120, 20, 20, 0.8);
+    width: 27%;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#filmekTabla {
+    background-color: rgba(120, 20, 20, 0.8);
+    color: ivory;
+    border-radius: 20px;
+    /*margin: auto;*/
+    padding: 10px;
+    width: 80%;
+}
+
+button,
+#rendezesid {
+    font-family: 'Limelight', cursive;
+    background-color: rgb(120, 20, 20);
+    color: ivory;
+    font-size: 18px;
+    width: 180px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+button:hover,
+#rendezesid:hover {
+    background-color: black;
+    color: ivory;
+}
+
+.lenyilo {
+    display: block;
+}
+
+#tablarandezesid {
+    background-color: rgba(220, 220, 220, 0.6);
+    height: 100%;
+}
+
+#vasarloadatid {
+    background-color: rgba(220, 220, 220, 0.7);
+    height: 100%;
+}
+
+#vasarloadatid2 {
+    font-family: 'Skranji', cursive;
+    background-color: rgb(120, 20, 20);
+    color: ivory;
+    border-radius: 5px;
+}
+
+.adatok {
+    font-family: 'Skranji', cursive;
+    border-radius: 20px;
+    display: inline;
+}
+
+.filmekTabla,
+th,
+td {
+    border: 2px solid black;
+    width: 100%;
+}
+
+.bevitel {
+    background-color: rgba(220, 220, 220, 0.7);
+    width: 50%;
+    display: inline;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="hatter.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+    <title>Film büfé</title>
+</head>
+
+<body class="hatter" onload="filmek()">
+    <div class="oldalnev">
+        <h1 id="nev">FILM BÜFÉ</h1>
+    </div>
+    <div class="adatok" id="vasarloadatid">
+        <input type="button" onclick="filmekGomb()" name="filmek" id="vasarloadatid2" value="Filmek">
+        <label for="emailId">Email cím:</label>
+        <input type="email" name="email" id="emailId">
+        <label for="passwordId">Jelszó</label>
+        <input type="password" name="password" id="passwordId">
+        <input type="button" onclick="vasarloadat()" name="vasarloadat" id="vasarloadatid2" value="Adataim">
+        <input type="button" onclick="vasarlorendeles()" name="vasarlorendeles" id="vasarloadatid2" value="Rendeléseim">
+        <div class="lenyilo" id="lenyilo">
+            <input type="button" onclick="arnovekvo()" name="rendezes" id="rendezesid" value="Ár szerint &#8595;">
+            <input type="button" onclick="arcsokkeno()" name="rendezes" id="rendezesid" value="Ár szerint &#8593;">
+            <input type="button" onclick="nevnovekvo()" name="rendezes" id="rendezesid" value="Név szerint &#8595;">
+            <input type="button" onclick="nevcsokkeno()" name="rendezes" id="rendezesid" value="Név szerint &#8593;">
+            <br>
+            <div class="bevitel">
+                <label for="nevId">Film címe:</label>
+                <input type="text" name="nev" id="nevId">
+                <label for="stilusId">stílusa:</label>
+                <input type="text" name="stilus" id="stilusId">
+                <label for="nyelvId">nyelve:</label>
+                <input type="text" name="nyelv" id="nyelvId">
+                <input type="button" onclick="filmek()" name="filmek" id="vasarloadatid2" value="Keresés">
+            </div>
+        </div>
+    </div>
+    <div id="filmekTabla"></div>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
